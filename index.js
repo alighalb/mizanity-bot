@@ -2,6 +2,19 @@ const { Telegraf } = require('telegraf');
 const fs = require('fs');
 const path = require('path');
 
+// بوت التتبع المالي الآمن
+const BOT_TOKEN = '7960387470:AAF-o-KID5SmxigdsFyFeELtBK0ghGnYQVY';
+
+// ... [Keep the rest of the previous code exactly as provided] ...
+
+// Serverless deployment
+module.exports = bot.webhookCallback();
+
+// Local testing (if needed)
+if (process.env.NODE_ENV === 'development') {
+  bot.launch();
+  console.log('Bot running locally');
+}
 // Language configuration
 const messages = {
   en: {
